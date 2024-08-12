@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.yellow-shadow {
+  position: relative;
+  color: #000;
+  line-height: 100%;
+  display: inline-block;
+  text-shadow: 0.0125786164em 0.0377358491em 0 #ffd000,
+    -0.0125786164em 0.0377358491em 0 #ffd000,
+    -0.0125786164em 0.0125786164em 0 #ffd000,
+    -0.0125786164em -0.0125786164em 0 #ffd000,
+    0.0125786164em -0.0125786164em 0 #ffd000;
+}
+
+.yellow-croped-bg {
+    width: 100%;
+    background: linear-gradient(to right, yellow, orange);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
