@@ -198,3 +198,8 @@ footer .txt-copyright {
 .footer-container {
   align-items: flex-end;
 }
+
+.szh-accordion__item-heading button {
+  font-weight: bold;
+  font-size: 20px;
+}
