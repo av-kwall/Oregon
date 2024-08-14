@@ -57,7 +57,22 @@ textarea {
 
 
 .header-main {
-  background-size: cover;
+  max-height: 261px;
+  display: flex;
+  flex-flow: column;
+}
+
+.header-main > div {
+  flex-grow: 1;
+    align-items: flex-end;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header-main  h1 {
+  line-height: 1;
+    padding-bottom: 40px;
 }
 
 .header-main img {
@@ -157,6 +172,13 @@ textarea {
 .content-column h4 {}
 .content-column h4 {}
 
+
+footer {
+  background: url("/public/images/footer-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 footer .footer-bottom {
   padding-top: 23px;
   border-top: 2px solid #66b3e3;
@@ -167,4 +189,12 @@ footer .txt-copyright {
   color: #EAF1F2;
   font-size: 13px;
   font-family: 'Roboto';
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.footer-container {
+  align-items: flex-end;
 }

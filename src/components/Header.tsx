@@ -46,7 +46,7 @@ export function Header() {
                 onClick={handleImageClick}
             />
             <Container>
-                <h1 className={`font-bold heading-font absolute ${pathname === "/student-life-2" ? "bottom-[100px]" : "bottom-8"}   text-[50px]`}>
+                <h1 className={`font-bold heading-font ${pathname === "/student-life-2" ? "bottom-[100px]" : ""}   text-[50px]`}>
                     {getTitle(pathname)}
                 </h1>
                 {pathname === "/student-life-2" && (
