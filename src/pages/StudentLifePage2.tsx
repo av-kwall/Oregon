@@ -2,12 +2,38 @@ import { Container } from "../components";
 import { Accordion } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { accordionData } from "./StudentLifePage";
+import { useEffect } from "react";
 
 export function StudentLifePage2() {
+  useEffect(() => {
+    document.title = "Student Life 2";
+  }, []);
   return (
     <section className="py-5">
       <Container className="w-full">
         <div className="flex flex-wrap justify-between mt-5">
+          <div className="w-full block md:hidden p-2">
+            <div className="flex flex-wrap  gap-3 items-center justify-center">
+              <Link
+                to="/request-info"
+                className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
+              >
+                request information
+              </Link>
+              <Link
+                to="/"
+                className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
+              >
+                Take a virtual tour
+              </Link>
+              <Link
+                to="/"
+                className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
+              >
+                schedule a campus visit
+              </Link>
+            </div>
+          </div>
           <div className="w-full lg:w-[70%] p-2">
             <div className=" flex flex-col gap-4">
               <h5 className="text-3xl font-bold">
@@ -61,31 +87,10 @@ export function StudentLifePage2() {
           </div>
         </div>
 
-        <div className="w-full block md:hidden p-2">
-          <div className="flex flex-wrap  gap-3">
-            <Link
-              to="/request-info"
-              className="uppercase no-underline text-blue-800 font-bold bg-yellow-300 w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
-            >
-              request information
-            </Link>
-            <Link
-              to="/"
-              className="uppercase no-underline text-blue-800 font-bold bg-yellow-300 w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
-            >
-              Take a virtual tour
-            </Link>
-            <Link
-              to="/"
-              className="uppercase no-underline text-blue-800 font-bold bg-yellow-300 w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
-            >
-              schedule a campus visit
-            </Link>
-          </div>
-        </div>
+
       </Container>
 
-      <div className="mt-5 flex gap-5 justify-center">
+      {/* <div className="mt-5 flex gap-5 justify-center">
         <Link
           to="/request-info"
           className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
@@ -98,7 +103,7 @@ export function StudentLifePage2() {
         >
           Student Life page
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 }

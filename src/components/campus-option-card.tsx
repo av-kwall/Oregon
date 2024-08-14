@@ -9,15 +9,15 @@ interface Props {
 
 export function CampusOptionCard({ name, time, date, institute }: Props) {
     return (
-        <div className="flex gap-5 mb-5 cursor-pointer w-fit">
-            <div className="flex items-center h-fit pt-1 gap-2">
+        <div className="items">
+            <div className="card-info-l">
                 <IoMdTime />
-                <p className="text-sm text-blue-800 font-semibold">{time}</p>
+                <p className="card-info-t">{time}</p>
             </div>
-            <div className="flex flex-col">
-                <h6 className="font-bold text-xl text-blue-800">{date}</h6>
-                <h6 className="font-bold text-xl">{name}</h6>
-                <p className="text-sm">{institute}</p>
+            <div className="card-info-r">
+                <h6 className="card-info-da">{date}</h6>
+                <h6 className="card-info-ti">{name}</h6>
+                <p className="card-info-in">{institute}</p>
             </div>
         </div>
     );

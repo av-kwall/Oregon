@@ -30,24 +30,23 @@ export function Header() {
 
     return (
         <header
-            className={`px-3 text-white ${pathname === "/student-life-2" ? "min-h-[250px]" : "h-48"} relative`}
+            className={`header-main px-3 text-white ${pathname === "/student-life-2" ? "min-h-[389px]" : "min-h-[261px]"} relative`}
             style={{
-                background:
-                    "linear-gradient(90deg, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.20) 100%), url('/header-bg.webp')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
+                background: "url(/header-bg.webp) no-repeat top center",
+                maxHeight: "261px",
+                backgroundSize: "cover"
             }}
         >
+
             <img
-                src="/logo.png"
+                src="/images/header2x-logo.png"
                 alt="logo"
                 loading="lazy"
-                className="cursor-pointer "
+                className="cursor-pointer w-[300px] pl-2"
                 onClick={handleImageClick}
             />
             <Container>
-                <h1 className={`font-extrabold absolute ${pathname === "/student-life-2" ? "bottom-[100px]" : "bottom-8"}   text-3xl`}>
+                <h1 className={`font-bold heading-font absolute ${pathname === "/student-life-2" ? "bottom-[100px]" : "bottom-8"}   text-[50px]`}>
                     {getTitle(pathname)}
                 </h1>
                 {pathname === "/student-life-2" && (
@@ -55,19 +54,19 @@ export function Header() {
                         <div className="flex flex-wrap  gap-3">
                             <Link
                                 to="/request-info"
-                                className="uppercase no-underline text-blue-800 font-bold bg-yellow-300 w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
+                                className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
                             >
                                 request information
                             </Link>
                             <Link
                                 to="/"
-                                className="uppercase no-underline text-blue-800 font-bold bg-yellow-300 w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
+                                className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
                             >
                                 Take a virtual tour
                             </Link>
                             <Link
                                 to="/"
-                                className="uppercase no-underline text-blue-800 font-bold bg-yellow-300 w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
+                                className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
                             >
                                 schedule a campus visit
                             </Link>
