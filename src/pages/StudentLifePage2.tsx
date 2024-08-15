@@ -1,4 +1,4 @@
-import { Container, AccordionItem } from "../components";
+import { Container, AccordionItem, SubtleBg } from "../components";
 import { Accordion } from "@szhsin/react-accordion";
 import { Link } from "react-router-dom";
 import { accordionData } from "./StudentLifePage";
@@ -10,6 +10,7 @@ export function StudentLifePage2() {
     document.title = "Student Life 2";
   }, []);
   return (
+    <SubtleBg>
     <section className="py-5">
       <Container className="w-full">
         <div className="flex flex-wrap justify-between mt-5">
@@ -105,5 +106,6 @@ export function StudentLifePage2() {
         </Link>
       </div> */}
     </section>
+    </SubtleBg>
   );
 }

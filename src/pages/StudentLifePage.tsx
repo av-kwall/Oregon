@@ -1,4 +1,4 @@
-import { Container, AccordionItem } from "../components";
+import { Container, AccordionItem, SubtleBg } from "../components";
 import { Accordion } from "@szhsin/react-accordion";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -41,6 +41,7 @@ export function StudentLifePage() {
         document.title = "Student Life 1";
       }, []);
     return (
+        <SubtleBg>
         <section className="py-5">
             <Container className="w-full">
                 <div className="flex flex-wrap justify-between">
@@ -160,5 +161,6 @@ export function StudentLifePage() {
                 </Link>
             </div> */}
         </section>
+        </SubtleBg>
     );
 }
