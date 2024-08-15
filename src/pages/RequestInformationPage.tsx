@@ -7,13 +7,13 @@ export function RequestInformationPage() {
         document.title = "Request form";
       }, []);
     return (
-        <section className="py-5 pb-10">
+        <section className="pb-10 request-form">
             <SubtleBg>
                 <Container className="w-full">
                     <div className="mb-10">
-                        <h2 className="text-3xl font-bold mb-5 text-[42px] heading-font">Your Academic Plans</h2>
+                        <h2 className="text-3xl font-[600] text-[42px] heading-font">Your Academic Plans</h2>
                         <div className="pl-1">
-                            <h6 className="text-2xl font-bold mb-2 text-[25px]">Student Type:</h6>
+                            <h6 className="text-2xl font-bold mb-2 text-[34px]">Student Type:</h6>
                             <p className="text-[16px]">
                                 <span className="font-semibold">First Year:</span> you are
                                 currently in high school or have graduated high school but have
@@ -72,7 +72,7 @@ export function RequestInformationPage() {
                     </div>
 
                     <div className="mb-10">
-                        <h5 className="text-3xl font-bold mb-5 text-[25px]">About you</h5>
+                        <h5 className="text-3xl font-semibold mb-5 text-[42px]">About you</h5>
                         <div className="pl-1">
                             <div className="flex gap-5 flex-wrap sm:flex-nowrap my-5">
                                 <div className="w-full mb-3 sm:mb-0">
@@ -123,7 +123,7 @@ export function RequestInformationPage() {
                     </div>
 
                     <div className="mb-10">
-                        <h5 className="text-3xl font-bold mb-5 text-[25px]">Contact Information</h5>
+                        <h5 className="text-3xl font-semibold mb-5 text-[42px]">Contact Information</h5>
                         <div className="pl-1">
                             <p>
                                 Use only a standard email provider for your preferred email address such as gmail or yahoo.

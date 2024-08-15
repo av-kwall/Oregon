@@ -17,7 +17,7 @@ export function Footer() {
             className="px-3 text-white overflow-hidden bg-[#003767]">
             <Container className="pb-10">
                 <div className="footer-container flex h-full gap-5 flex-wrap items-center md:flex-nwarp pb-8">
-                    <div className="flex flex-col justify-between">
+                    <div className="flex flex-col justify-between column-1">
                         <div className="social-icons mt-5 flex gap-4 pl-20">
                             <a href="/">
                                 <FaFacebook />
@@ -37,7 +37,7 @@ export function Footer() {
                         </div>
                     </div>
 
-                    <div className="pt-20">
+                    <div className="pt-20 column-2">
                         <div className="pl-5">
                             <img src="/images/footer-logo.png" alt="logo" loading="lazy" className="w-52" />
                             <div className="flex flex-col gap-4 mt-5">

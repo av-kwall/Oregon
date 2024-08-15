@@ -266,3 +266,18 @@ p a {
   order: 1;
 }
 }
+
+.request-form > div > .w-full {
+  padding-top: 50px;
+}
+
+.request-form .w-full h2 {
+  /* padding-bottom: 30px; */
+}
+
+select, input {
+  height: 80px;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.2) !important;
+}
