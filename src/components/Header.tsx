@@ -30,7 +30,7 @@ export function Header() {
 
     return (
         <header
-            className={`header-main px-3 text-white ${pathname === "/student-life-2" ? "min-h-[389px]" : "min-h-[261px]"} relative`}
+            className={`header-main px-3 text-white ${pathname === "/student-life-2" ? "big-head min-h-[389px]" : "min-h-[261px]"} relative`}
             style={{
                 background: "url(/header-bg.webp) no-repeat top center",
                 maxHeight: "261px",
@@ -50,7 +50,7 @@ export function Header() {
                     {getTitle(pathname)}
                 </h1>
                 {pathname === "/student-life-2" && (
-                    <div className="w-full hidden md:block p-2 absolute bottom-5">
+                    <div className="w-full hidden md:block p-2 absolute bottom-5 buttons">
                         <div className="flex flex-wrap  gap-3">
                             <Link
                                 to="/request-info"

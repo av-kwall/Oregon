@@ -87,7 +87,7 @@ export function StudentLifePage() {
                 <div className="flex flex-wrap justify-between mt-10">
                     <div className="w-full md:w-[70%] p-2">
                         <div className=" flex flex-col gap-4">
-                            <h5 className="text-3xl font-bold">
+                            <h5 className="head-title font-bold">
                                 Oregon Tech Owls are Involved!
                             </h5>
                             <p className="text-[15px]">

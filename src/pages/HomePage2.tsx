@@ -43,20 +43,20 @@ const dummyData = [
 
 export function HomePage2() {
     useEffect(() => {
-        document.title = "Landing Page 1";
+        document.title = "Landing Page 2";
       }, []);
     return (
         <SubtleBg>
-            <section className="pt-10">
-                <div className="flex flex-col justify-center items-center">
+            <section className="pt-10 container-outer-lp-2">
+                <div className="flex flex-col justify-center items-center image-right-cont">
                     <img
-                        src="/home-2.webp"
+                        src="/images/lp-2-top.png"
                         alt="oregon"
                         className="absolute right-0 top-5 max-w-full hidden lg:block"
                     />
                     <Container>
-                        <div className="mt-5 flex">
-                            <div className="w-full lg:w-[60%] text-center lg:text-left flex flex-col gap-4">
+                        <div className="content-below max-w-588">
+                            <div className="max-w-3xl flex flex-col ">
                                 <p className="font-bold">
                                     Attend a New Wings event to finalize your calss schedule and
                                     ensure a smooth transition to campus. New Wings is a mandatory
@@ -66,7 +66,7 @@ export function HomePage2() {
                                     Student must have paid their enrollement deposits to be able to
                                     sign up for New Wings.
                                 </p>
-                                <p>
+                                <p className="font-italic">
                                     If prompted to log in when selecting an event to register for,
                                     please use your personal email address that was used when you
                                     started an application with us (not your official Oregon Tech
@@ -79,7 +79,7 @@ export function HomePage2() {
 
 
                 <div className="mt-16 yellow-croped-bg py-20">
-                    <Container className="w-full flex justify-between flex-wrap md:flex-nowrap gap-8 md:gap-0">
+                    <Container className="w-full flex justify-between flex-wrap md:flex-nowrap gap-8 md:gap-0 content-column">
                         {dummyData.map((item) => (
                             <div className="w-full" key={item.id}>
                                 <h4 className="text-4xl font-bold mb-4">{item.name}</h4>

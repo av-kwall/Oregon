@@ -70,7 +70,7 @@ export function HomePage() {
                   Student must have paid their enrollement deposits to be able
                   to sign up for New Wings.
                 </p>
-                <p className="text-[15px]">
+                <p className="text-[15px] font-italic">
                   If prompted to log in when selecting an event to register for,
                   please use your personal email address that was used when you
                   started an application with us (not your official Oregon Tech

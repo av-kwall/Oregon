@@ -37,6 +37,10 @@ textarea {
   @apply text-[16px];
 }
 
+.font-italic {
+  font-style: italic;;
+}
+
 .yellow-shadow {
   position: relative;
   color: #0c043b;
@@ -70,11 +74,22 @@ textarea {
     z-index: 2;
 }
 
+.header-main.big-head > div {
+  align-items: center;
+}
+
+.header-main.big-head > div h1 {
+    padding-bottom: 95px;
+}
 .header-main  h1 {
   line-height: 1;
     padding-bottom: 40px;
 }
 
+.header-main.big-head > div buttons {
+bottom: 70px;
+padding: 0;
+}
 .header-main img {
   position: relative;
   z-index: 2;
@@ -90,7 +105,9 @@ textarea {
   top: 0;
   z-index: 1;
 }
-
+.container-outer-lp-2 {
+padding-top: 64px;
+}
 .content-section {
   padding-top: 50px;;
 }
@@ -117,6 +134,12 @@ textarea {
   gap: 24px;
   display: flex;
   width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+.content-column  {
+  flex-flow: column;
+}
 }
 
 .content-column .w-full {
@@ -202,4 +225,42 @@ footer .txt-copyright {
 .szh-accordion__item-heading button {
   font-weight: bold;
   font-size: 20px;
+}
+
+/* Landing pages 2 */
+.image-right-cont img {
+  width: 666px;
+  height: auto;
+  z-index: 2;
+  top: 0;
+}
+.max-w-588 {
+  max-width: 588px;
+}
+
+.szh-accordion__item-heading button.text-white {
+  color: #fff;
+}
+.szh-accordion__item-heading button {
+  color: #565F5F;
+}
+.head-title {
+  font-weight: 600;
+  font-size: 42px;
+  padding-bottom: 20px;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+
+.order-1 {
+  order: 2;
+}
+.order-2 {
+  order: 3;
+}
+.order-3 {
+  order: 1;
 }

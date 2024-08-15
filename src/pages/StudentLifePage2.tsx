@@ -1,8 +1,9 @@
-import { Container } from "../components";
-import { Accordion } from "flowbite-react";
+import { Container, AccordionItem } from "../components";
+import { Accordion } from "@szhsin/react-accordion";
 import { Link } from "react-router-dom";
 import { accordionData } from "./StudentLifePage";
 import { useEffect } from "react";
+
 
 export function StudentLifePage2() {
   useEffect(() => {
@@ -12,7 +13,7 @@ export function StudentLifePage2() {
     <section className="py-5">
       <Container className="w-full">
         <div className="flex flex-wrap justify-between mt-5">
-          <div className="w-full block md:hidden p-2">
+          <div className="w-full block md:hidden p-2 order-1">
             <div className="flex flex-wrap  gap-3 items-center justify-center">
               <Link
                 to="/request-info"
@@ -34,9 +35,9 @@ export function StudentLifePage2() {
               </Link>
             </div>
           </div>
-          <div className="w-full lg:w-[70%] p-2">
+          <div className="w-full lg:w-[70%] p-2  order-2">
             <div className=" flex flex-col gap-4">
-              <h5 className="text-3xl font-bold">
+              <h5 className="text-3xl head-title">
                 Oregon Tech Owls are Involved!
               </h5>
               <p className="text-[15px]">
@@ -57,18 +58,17 @@ export function StudentLifePage2() {
                 Falls campus:
               </p>
 
-              {accordionData.map((item, index) => (
-                <Accordion key={index} collapseAll flush>
-                  <Accordion.Panel>
-                    <Accordion.Title>{item.title}</Accordion.Title>
-                    <Accordion.Content>{item.content}</Accordion.Content>
-                  </Accordion.Panel>
-                </Accordion>
-              ))}
+              <Accordion transition transitionTimeout={200}>
+                  {accordionData.map((item, index) => (
+                      <AccordionItem key={index} header={item?.title}>
+                          {item?.content}
+                      </AccordionItem>
+                  ))}
+              </Accordion>
             </div>
           </div>
 
-          <div className="w-full lg:w-[30%] flex flex-col gap-5 relative top-0 sm:-top-[200px]">
+          <div className="w-full lg:w-[30%] flex flex-col gap-5 relative top-0 sm:-top-[200px]  order-3">
             <div className="w-full p-2">
               <img
                 src="/student-life.webp"
