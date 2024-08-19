@@ -1,7 +1,7 @@
 import { Header, Footer } from "./components";
 import { HomePage,HomePage2, StudentLifePage, StudentLifePage2, RequestInformationPage } from "./pages";
 import { Routes, Route } from "react-router-dom";
-// test
+
 export default function App() {
   return (
     <>
