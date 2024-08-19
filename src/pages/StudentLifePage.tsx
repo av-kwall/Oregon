@@ -62,7 +62,9 @@ export function StudentLifePage() {
                     </div>
 
                     <div className="w-full sm:hidden flex justify-center flex-col items-center">
-                        <h6 className="text-lg font-bold mb-5">Curious about Oregon Tech?</h6>
+                        <h6 className="text-lg font-bold mb-5">
+                            Curious about Oregon Tech?
+                        </h6>
                         <div className="flex gap-3 items-center w-full">
                             <Link
                                 to="/request-info"
@@ -105,8 +107,8 @@ export function StudentLifePage() {
                                     interested in seeing what life for our students or want to get
                                     involved with community and ask them questions?{" "}
                                     <a href="/">Join us on Zeeme</a>
-                                    and check below to learn more about student life on the Klamath
-                                    Falls campus:
+                                    and check below to learn more about student life on the
+                                    Klamath Falls campus:
                                 </p>
                                 <Accordion transition transitionTimeout={200}>
                                     {accordionData.map((item, index) => (
