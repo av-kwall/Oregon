@@ -44,7 +44,7 @@ const dummyData = [
 export function HomePage2() {
     useEffect(() => {
         document.title = "Landing Page 2";
-      }, []);
+    }, []);
     return (
         <SubtleBg>
             <section className="pt-10 container-outer-lp-2">
@@ -63,8 +63,8 @@ export function HomePage2() {
                                     event for incoming students.
                                 </p>
                                 <p>
-                                    Student must have paid their enrollement deposits to be able to
-                                    sign up for New Wings.
+                                    Student must have paid their enrollement deposits to be able
+                                    to sign up for New Wings.
                                 </p>
                                 <p className="font-italic">
                                     If prompted to log in when selecting an event to register for,
@@ -77,7 +77,6 @@ export function HomePage2() {
                     </Container>
                 </div>
 
-
                 <div className="mt-16 yellow-croped-bg py-20">
                     <Container className="w-full flex justify-between flex-wrap md:flex-nowrap gap-8 md:gap-0 content-column">
                         {dummyData.map((item) => (
@@ -89,24 +88,8 @@ export function HomePage2() {
                             </div>
                         ))}
                     </Container>
-
-                    {/* <div className="mt-5 flex gap-5 justify-center">
-                    <Link
-                        to="/"
-                        className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-                    >
-                        Home Page
-                    </Link>
-                    <Link
-                        to="/student-life"
-                        className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-                    >
-                        Student Life page
-                    </Link>
-                </div> */}
                 </div>
             </section>
         </SubtleBg>
-
     );
 }

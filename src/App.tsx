@@ -1,5 +1,11 @@
 import { Header, Footer } from "./components";
-import { HomePage,HomePage2, StudentLifePage, StudentLifePage2, RequestInformationPage } from "./pages";
+import {
+  HomePage,
+  HomePage2,
+  StudentLifePage,
+  StudentLifePage2,
+  RequestInformationPage,
+} from "./pages";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -16,6 +22,5 @@ export default function App() {
       </Routes>
       <Footer />
     </>
-
   );
 }

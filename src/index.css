@@ -188,17 +188,10 @@ textarea {
   color: #333333;
   font-size: 13px;
 }
-.content-column .w-full .items .card-info-r {
-}
 
 .content-column h4 {
   font-size: 42px;
   font-weight: bold;
-  text-wrap: nowrap;
-}
-.content-column h4 {
-}
-.content-column h4 {
 }
 
 footer {
@@ -272,10 +265,6 @@ p a {
 
 .request-form > div > .w-full {
   padding-top: 50px;
-}
-
-.request-form .w-full h2 {
-  /* padding-bottom: 30px; */
 }
 
 select,

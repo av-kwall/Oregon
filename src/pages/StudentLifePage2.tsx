@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { accordionData } from "./StudentLifePage";
 import { useEffect } from "react";
 
-
 export function StudentLifePage2() {
   useEffect(() => {
     document.title = "Student Life 2";
@@ -55,8 +54,8 @@ export function StudentLifePage2() {
                   interested in seeing what life for our students or want to get
                   involved with community and ask them questions?{" "}
                   <a href="/">Join us on Zeeme</a>
-                  and check below to learn more about student life on the Klamath
-                  Falls campus:
+                  and check below to learn more about student life on the
+                  Klamath Falls campus:
                 </p>
 
                 <Accordion transition transitionTimeout={200}>
@@ -87,8 +86,6 @@ export function StudentLifePage2() {
               </div>
             </div>
           </div>
-
-
         </Container>
 
         {/* <div className="mt-5 flex gap-5 justify-center">

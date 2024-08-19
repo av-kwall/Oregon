@@ -5,15 +5,19 @@ import { useEffect } from "react";
 export function RequestInformationPage() {
     useEffect(() => {
         document.title = "Request form";
-      }, []);
+    }, []);
     return (
         <section className="pb-10 request-form">
             <SubtleBg>
                 <Container className="w-full">
                     <div className="mb-10">
-                        <h2 className="text-3xl font-[600] text-[42px] heading-font mb-7">Your Academic Plans</h2>
+                        <h2 className="text-3xl font-[600] text-[42px] heading-font mb-7">
+                            Your Academic Plans
+                        </h2>
                         <div className="pl-1">
-                            <h6 className="text-2xl font-bold mb-5 text-[34px]">Student Type:</h6>
+                            <h6 className="text-2xl font-bold mb-5 text-[34px]">
+                                Student Type:
+                            </h6>
                             <p className="text-[16px]">
                                 <span className="font-semibold">First Year:</span> you are
                                 currently in high school or have graduated high school but have
@@ -23,14 +27,14 @@ export function RequestInformationPage() {
                             <p>
                                 <span className="font-semibold">Transfer:</span> you have
                                 graduated high school and taken college courses since you
-                                graduated or you have completed a bachelor's degree and would like
-                                to earn a second bachelor's degree.
+                                graduated or you have completed a bachelor's degree and would
+                                like to earn a second bachelor's degree.
                             </p>
 
                             <p>
                                 <span className="font-semibold">Graduate:</span> you have
-                                completed a bachelor's degree and would like to earn a master's or
-                                doctoral d egree.
+                                completed a bachelor's degree and would like to earn a master's
+                                or doctoral d egree.
                             </p>
 
                             <div className="flex gap-5 my-5">
@@ -63,16 +67,18 @@ export function RequestInformationPage() {
                             </div>
 
                             <p>
-                                <span className="font-semibold">Names:</span> Prefered First Name
-                                is the name we will use on all official communications to you and
-                                across campus. If yo do not provide a prefered name, we wil
-                                default to your first name.
+                                <span className="font-semibold">Names:</span> Prefered First
+                                Name is the name we will use on all official communications to
+                                you and across campus. If yo do not provide a prefered name, we
+                                wil default to your first name.
                             </p>
                         </div>
                     </div>
 
                     <div className="mb-10">
-                        <h5 className="text-3xl font-semibold mb-5 text-[42px]">About you</h5>
+                        <h5 className="text-3xl font-semibold mb-5 text-[42px]">
+                            About you
+                        </h5>
                         <div className="pl-1">
                             <div className="flex gap-5 flex-wrap sm:flex-nowrap my-5">
                                 <div className="w-full mb-3 sm:mb-0">
@@ -123,17 +129,19 @@ export function RequestInformationPage() {
                     </div>
 
                     <div className="mb-10">
-                        <h5 className="text-3xl font-semibold mb-5 text-[42px]">Contact Information</h5>
+                        <h5 className="text-3xl font-semibold mb-5 text-[42px]">
+                            Contact Information
+                        </h5>
                         <div className="pl-1">
                             <p>
-                                Use only a standard email provider for your preferred email address such as gmail or yahoo.
+                                Use only a standard email provider for your preferred email
+                                address such as gmail or yahoo.
                             </p>
 
+                            <p>Add oit@oit.edu email contacts to ensure inbox delivery.</p>
                             <p>
-                                Add oit@oit.edu email contacts to ensure inbox delivery.
-                            </p>
-                            <p>
-                                Emails assigned by your school or work often block messages sent from .edu domains.
+                                Emails assigned by your school or work often block messages sent
+                                from .edu domains.
                             </p>
 
                             <div className="flex gap-5 flex-wrap sm:flex-nowrap mt-5">
@@ -173,7 +181,6 @@ export function RequestInformationPage() {
                     </div>
                 </Container>
             </SubtleBg>
-
         </section>
     );
 }
