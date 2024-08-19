@@ -11,9 +11,9 @@ export function RequestInformationPage() {
             <SubtleBg>
                 <Container className="w-full">
                     <div className="mb-10">
-                        <h2 className="text-3xl font-[600] text-[42px] heading-font">Your Academic Plans</h2>
+                        <h2 className="text-3xl font-[600] text-[42px] heading-font mb-7">Your Academic Plans</h2>
                         <div className="pl-1">
-                            <h6 className="text-2xl font-bold mb-2 text-[34px]">Student Type:</h6>
+                            <h6 className="text-2xl font-bold mb-5 text-[34px]">Student Type:</h6>
                             <p className="text-[16px]">
                                 <span className="font-semibold">First Year:</span> you are
                                 currently in high school or have graduated high school but have
@@ -136,7 +136,7 @@ export function RequestInformationPage() {
                                 Emails assigned by your school or work often block messages sent from .edu domains.
                             </p>
 
-                            <div className="flex gap-5 flex-wrap sm:flex-nowrap mt-3">
+                            <div className="flex gap-5 flex-wrap sm:flex-nowrap mt-5">
                                 <div className="w-full sm:w-1/3 mb-3 sm:mb-0">
                                     <div className="mb-2">
                                         <Label htmlFor="email" value="* Email Address" />
