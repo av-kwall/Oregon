@@ -35,7 +35,7 @@ export function Footer() {
                         </div>
                     </div>
 
-                    <div className="pt-20 column-2">
+                    <div className="pt-20 column-2 pl-0 sm:pl-5">
                         <div className="pl-5">
                             <img
                                 src="/images/footer-logo.png"
@@ -67,6 +67,7 @@ export function Footer() {
                             </div>
                         </div>
                     </div>
+
                     <div className="flex sm:hidden w-full social-icons  gap-4 justify-center">
                         <a href="/">
                             <FaFacebook />
