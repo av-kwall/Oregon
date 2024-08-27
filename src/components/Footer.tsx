@@ -1,18 +1,20 @@
 import { Container } from "./Container";
 import {
-    FaFacebook,
+    FaFacebookF,
     FaTwitter,
     FaInstagram,
     FaYoutube,
     FaLinkedin,
-    FaLocationArrow,
-    FaVoicemail,
+    FaMapPin,
+    FaEnvelope,
+    FaMapMarker,
+    FaPhoneAlt
 } from "react-icons/fa";
-import { CiPhone } from "react-icons/ci";
+
 
 const socialLinks = [
     {
-        icon: <FaFacebook />,
+        icon: <FaFacebookF />,
         url: "/",
     },
     {
@@ -84,7 +86,7 @@ export function Footer() {
                                 <div className="flex flex-col gap-4 mt-5">
                                     <p className="flex gap-3 text-sm relative font-weight-300">
                                         <span className="relative top-1">
-                                            <FaLocationArrow size={18} />
+                                            <FaMapMarker size={18} />
                                         </span>
                                         <span>
                                             3201, Campus Drive <br /> Klamath Falls, OR 97601
@@ -92,13 +94,13 @@ export function Footer() {
                                     </p>
                                     <p className="flex gap-3 text-sm relative font-weight-300">
                                         <span className="relative top-1">
-                                            <CiPhone size={18} />
+                                            <FaPhoneAlt size={18} />
                                         </span>
                                         <span>800.422.2017 | 541.855.1000</span>
                                     </p>
                                     <p className="flex gap-3 text-sm relative font-weight-300">
                                         <span className="relative top-1">
-                                            <FaVoicemail size={18} />
+                                            <FaEnvelope size={18} />
                                         </span>
                                         <span>oit@oit.edu</span>
                                     </p>
@@ -133,7 +135,7 @@ export function Footer() {
                             <div className="flex flex-col gap-4 mt-5 justify-start w-full">
                                 <p className="flex gap-3 text-sm relative font-weight-300">
                                     <span className="relative top-1">
-                                        <FaLocationArrow size={18} />
+                                        <FaMapPin size={18} />
                                     </span>
                                     <span>
                                         3201, Campus Drive <br /> Klamath Falls, OR 97601
@@ -141,13 +143,13 @@ export function Footer() {
                                 </p>
                                 <p className="flex gap-3 text-sm relative font-weight-300">
                                     <span className="relative top-1">
-                                        <CiPhone size={18} />
+                                        <FaPhoneAlt size={18} />
                                     </span>
                                     <span>800.422.2017 | 541.855.1000</span>
                                 </p>
                                 <p className="flex gap-3 text-sm relative font-weight-300">
                                     <span className="relative top-1">
-                                        <FaVoicemail size={18} />
+                                        <FaEnvelope size={18} />
                                     </span>
                                     <span>oit@oit.edu</span>
                                 </p>
