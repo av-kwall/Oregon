@@ -1,7 +1,9 @@
-import { Container, AccordionItem, SubtleBg } from "../components";
-import { Accordion } from "@szhsin/react-accordion";
+import { Container, SubtleBg } from "../components";
+// import { Accordion } from "@szhsin/react-accordion";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+
+import Accordion from "../components/js-accordion/index";
 
 export const accordionData = [
     {
@@ -110,13 +112,15 @@ export function StudentLifePage() {
                                     and check below to learn more about student life on the
                                     Klamath Falls campus:
                                 </p>
-                                <Accordion transition transitionTimeout={200}>
+                                {/* <Accordion transition transitionTimeout={200}>
                                     {accordionData.map((item, index) => (
                                         <AccordionItem key={index} header={item?.title}>
                                             {item?.content}
                                         </AccordionItem>
                                     ))}
-                                </Accordion>
+                                </Accordion> */}
+
+                                <Accordion items={accordionData} />
                             </div>
                         </div>
 
