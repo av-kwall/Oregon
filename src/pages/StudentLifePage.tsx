@@ -1,9 +1,8 @@
 import { Container, SubtleBg } from "../components";
-// import { Accordion } from "@szhsin/react-accordion";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-import Accordion from "../components/js-accordion/index";
+import { Accordion } from "../components/accordion/Accordion";
 
 export const accordionData = [
     {
