@@ -1,12 +1,10 @@
-export function SubtleBg({
-    children,
-    className,
-    id,
-}: {
+interface SubtleBgProps {
     children: React.ReactNode;
     className?: string;
     id?: string;
-}) {
+}
+
+export function SubtleBg({ children, className, id }: SubtleBgProps) {
     return (
         <div
             className={className}
@@ -17,6 +15,8 @@ export function SubtleBg({
                 backgroundRepeat: "no-repeat",
             }}
             id={id}
+            role="presentation"
+            aria-label={id ? `Background section with id ${id}` : undefined}
         >
             {children}
         </div>

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "./style.css"
+import "./style.css";
 
 interface Props {
     items: {
@@ -17,8 +17,8 @@ export function Accordion(props: Props) {
         <div className="accordion">
             {props.items.map((item, index) => (
                 <div className="accordion-item" key={index}>
-                    <button className="accordion-header">
-                        <h3>{item.title}</h3>
+                    <button className="accordion-header" type="button">
+                        {item.title}
                         <svg
                             className="accordion-icon"
                             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,11 @@ export function Accordion(props: Props) {
                             />
                         </svg>
                     </button>
-                    <div className="accordion-content">
+                    <div
+                        className="accordion-content"
+                        role="region"
+                        aria-labelledby={`accordion-header-${index}`}
+                    >
                         <div className="accordion-content-inner">{item.content}</div>
                     </div>
                 </div>

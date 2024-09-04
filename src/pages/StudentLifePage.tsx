@@ -1,8 +1,6 @@
-import { Container, SubtleBg } from "../components";
+import { Container, SubtleBg, Accordion } from "../components";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-
-import { Accordion } from "../components/accordion/Accordion";
 
 export const accordionData = [
     {
@@ -49,48 +47,48 @@ export function StudentLifePage() {
                         <div className="w-full sm:w-1/2 p-2">
                             <img
                                 src="/student-life.webp"
-                                alt="student-left"
+                                alt="Student life activities on campus"
                                 className="w-full h-auto object-cover"
                             />
                         </div>
                         <div className="w-full sm:w-1/2 p-2">
                             <img
                                 src="/student-life-2.webp"
-                                alt="student-left"
+                                alt="Group of students participating in campus activities"
                                 className="w-full h-auto object-cover"
                             />
                         </div>
                     </div>
 
-                    <div className="w-full sm:hidden flex justify-center flex-col items-center">
+                    <div className="w-full sm:hidden flex justify-center flex-col items-center mt-5">
                         <h6 className="text-lg font-bold mb-5">
-                            Curious about Oregon Tech?
+                            Curious About Oregon Tech?
                         </h6>
                         <div className="flex gap-3 items-center w-full">
                             <Link
                                 to="/request-info"
                                 className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-1/2 text-center"
                             >
-                                request information
+                                Request Information
                             </Link>
                             <Link
                                 to="/"
                                 className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-1/2 text-center"
                             >
-                                Take a virtual tour
+                                Take a Virtual Tour
                             </Link>
                         </div>
                         <Link
                             to="/"
                             className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-[55%] mt-3 text-center"
                         >
-                            schedule a campus visit
+                            Schedule a Campus Visit
                         </Link>
                     </div>
 
                     <div className="flex flex-wrap justify-between mt-10">
                         <div className="w-full md:w-[70%] p-2">
-                            <div className=" flex flex-col gap-4">
+                            <div className="flex flex-col gap-4">
                                 <h5 className="head-title font-bold">
                                     Oregon Tech Owls are Involved!
                                 </h5>
@@ -105,19 +103,15 @@ export function StudentLifePage() {
                                     start your own club!
                                 </p>
                                 <p className="text-[15px]">
-                                    interested in seeing what life for our students or want to get
-                                    involved with community and ask them questions?{" "}
-                                    <a href="/">Join us on Zeeme</a>
+                                    Interested in seeing what life is like for our students or
+                                    want to get involved with the community and ask them
+                                    questions?{" "}
+                                    <a href="/" className="text-[#003767] font-semibold">
+                                        Join us on Zeeme
+                                    </a>{" "}
                                     and check below to learn more about student life on the
                                     Klamath Falls campus:
                                 </p>
-                                {/* <Accordion transition transitionTimeout={200}>
-                                    {accordionData.map((item, index) => (
-                                        <AccordionItem key={index} header={item?.title}>
-                                            {item?.content}
-                                        </AccordionItem>
-                                    ))}
-                                </Accordion> */}
 
                                 <Accordion items={accordionData} />
                             </div>
@@ -125,26 +119,26 @@ export function StudentLifePage() {
 
                         <aside className="w-full md:w-[30%] p-2 hidden sm:block">
                             <h6 className="text-lg font-bold mb-5">
-                                Curious about Oregon Tech?
+                                Curious About Oregon Tech?
                             </h6>
                             <div className="flex flex-col gap-3">
                                 <Link
                                     to="/request-info"
                                     className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
                                 >
-                                    request information
+                                    Request Information
                                 </Link>
                                 <Link
                                     to="/"
                                     className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
                                 >
-                                    Take a virtual tour
+                                    Take a Virtual Tour
                                 </Link>
                                 <Link
                                     to="/"
                                     className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
                                 >
-                                    schedule a campus visit
+                                    Schedule a Campus Visit
                                 </Link>
                             </div>
                         </aside>

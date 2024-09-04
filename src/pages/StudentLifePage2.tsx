@@ -1,5 +1,4 @@
-import { Container, AccordionItem, SubtleBg } from "../components";
-import { Accordion } from "@szhsin/react-accordion";
+import { Container, SubtleBg, Accordion } from "../components";
 import { Link } from "react-router-dom";
 import { accordionData } from "./StudentLifePage";
 import { useEffect } from "react";
@@ -19,24 +18,24 @@ export function StudentLifePage2() {
                   to="/request-info"
                   className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-1/2 text-center"
                 >
-                  request information
+                  Request Information
                 </Link>
                 <Link
                   to="/"
                   className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-1/2 text-center"
                 >
-                  Take a virtual tour
+                  Take a Virtual Tour
                 </Link>
               </div>
               <Link
                 to="/"
                 className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-[55%] mt-3 text-center"
               >
-                schedule a campus visit
+                Schedule a Campus Visit
               </Link>
             </div>
-            <div className="w-full lg:w-[70%] p-2  order-2">
-              <div className=" flex flex-col gap-4">
+            <div className="w-full lg:w-[70%] p-2 order-2">
+              <div className="flex flex-col gap-4">
                 <h5 className="text-3xl head-title">
                   Oregon Tech Owls are Involved!
                 </h5>
@@ -51,57 +50,39 @@ export function StudentLifePage2() {
                   start your own club!
                 </p>
                 <p className="text-[15px]">
-                  interested in seeing what life for our students or want to get
-                  involved with community and ask them questions?{" "}
-                  <a href="/">Join us on Zeeme</a>
+                  Interested in seeing what life is like for our students or
+                  want to get involved with the community and ask them
+                  questions?{" "}
+                  <a href="/" className="text-[#003767] font-semibold">
+                    Join us on Zeeme
+                  </a>{" "}
                   and check below to learn more about student life on the
                   Klamath Falls campus:
                 </p>
 
-                <Accordion transition transitionTimeout={200}>
-                  {accordionData.map((item, index) => (
-                    <AccordionItem key={index} header={item?.title}>
-                      {item?.content}
-                    </AccordionItem>
-                  ))}
-                </Accordion>
+                <Accordion items={accordionData} />
               </div>
             </div>
 
-            <div className="w-full lg:w-[30%] flex flex-col gap-5 relative top-0 sm:-top-[200px]  order-3">
+            <div className="w-full lg:w-[30%] flex flex-col gap-5 relative top-0 sm:-top-[200px] order-3">
               <div className="w-full p-2">
                 <img
                   src="/student-life.webp"
-                  alt="student-left"
-                  className="w-full h-auto lg:h-[250px] aspect-auto  lg:aspect-square object-cover"
+                  alt="Student life activities"
+                  className="w-full h-auto lg:h-[250px] aspect-auto lg:aspect-square object-cover"
                 />
               </div>
 
               <div className="w-full p-2">
                 <img
                   src="/student-life-2.webp"
-                  alt="student-left"
-                  className="w-full h-auto lg:h-[250px] aspect-auto lg:aspect-square  object-cover"
+                  alt="Students participating in campus activities"
+                  className="w-full h-auto lg:h-[250px] aspect-auto lg:aspect-square object-cover"
                 />
               </div>
             </div>
           </div>
         </Container>
-
-        {/* <div className="mt-5 flex gap-5 justify-center">
-        <Link
-          to="/request-info"
-          className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-        >
-          Request Information page
-        </Link>
-        <Link
-          to="/student-life"
-          className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-        >
-          Student Life page
-        </Link>
-      </div> */}
       </section>
     </SubtleBg>
   );

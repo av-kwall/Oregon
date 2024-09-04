@@ -55,19 +55,20 @@ export function HomePage() {
                 src="/images/newwings2x.png"
                 alt="left-wing"
                 className="relative right-1"
+                aria-hidden="true"
               />
             </div>
 
             <div className="content-below">
               <div className="max-w-3xl text-center flex flex-col">
                 <p className="font-bold">
-                  Attend a New Wings event to finalize your calss schedule and
+                  Attend a New Wings event to finalize your class schedule and
                   ensure a smooth transition to campus. New Wings is a mandatory
                   event for incoming students.
                 </p>
                 <p>
-                  Student must have paid their enrollement deposits to be able
-                  to sign up for New Wings.
+                  Student must have paid their enrollment deposits to be able to
+                  sign up for New Wings.
                 </p>
                 <p className="text-[15px] font-italic">
                   If prompted to log in when selecting an event to register for,
