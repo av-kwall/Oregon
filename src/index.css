@@ -247,6 +247,13 @@ footer .txt-copyright {
   padding-bottom: 20px;
 }
 
+.student-life-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
 p a {
   text-decoration: underline;
 }

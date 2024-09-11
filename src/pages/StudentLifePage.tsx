@@ -67,26 +67,26 @@ export function StudentLifePage() {
                         <div className="flex gap-3 items-center w-full">
                             <Link
                                 to="/request-info"
-                                className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-1/2 text-center"
+                                className="uppercase !no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-1/2 text-center"
                             >
                                 Request Information
                             </Link>
                             <Link
                                 to="/"
-                                className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-1/2 text-center"
+                                className="uppercase !no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-1/2 text-center"
                             >
                                 Take a Virtual Tour
                             </Link>
                         </div>
                         <Link
                             to="/"
-                            className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-[55%] mt-3 text-center"
+                            className="uppercase !no-underline text-[#003767] font-bold bg-[#FFD24F] py-2 px-2 hover:scale-105 transition-all ease-in duration-300 text-[14px] w-[55%] mt-3 text-center"
                         >
                             Schedule a Campus Visit
                         </Link>
                     </div>
 
-                    <div className="flex flex-wrap justify-between mt-10">
+                    <div className="student-life-section">
                         <div className="w-full md:w-[70%] p-2">
                             <div className="flex flex-col gap-4">
                                 <h5 className="head-title font-bold">
@@ -124,19 +124,19 @@ export function StudentLifePage() {
                             <div className="flex flex-col gap-3">
                                 <Link
                                     to="/request-info"
-                                    className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
+                                    className="uppercase !no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
                                 >
                                     Request Information
                                 </Link>
                                 <Link
                                     to="/"
-                                    className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
+                                    className="uppercase !no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
                                 >
                                     Take a Virtual Tour
                                 </Link>
                                 <Link
                                     to="/"
-                                    className="uppercase no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
+                                    className="uppercase !no-underline text-[#003767] font-bold bg-[#FFD24F] w-fit py-2 px-3 hover:scale-105 transition-all ease-in duration-300"
                                 >
                                     Schedule a Campus Visit
                                 </Link>
